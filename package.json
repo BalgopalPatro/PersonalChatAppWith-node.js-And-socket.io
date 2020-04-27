@@ -1,0 +1,31 @@
+{
+  "name": "personalchatappwith-node.js-and-socket.io",
+  "version": "1.0.0",
+  "description": "Personal One to One Chat Application Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BalgopalPatro/PersonalChatAppWith-node.js-And-socket.io.git"
+  },
+  "keywords": [
+    "Node.js",
+    "socket.js",
+    "ChatApp"
+  ],
+  "author": "N Balgopal Patro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BalgopalPatro/PersonalChatAppWith-node.js-And-socket.io/issues"
+  },
+  "homepage": "https://github.com/BalgopalPatro/PersonalChatAppWith-node.js-And-socket.io#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "socket.io": "^2.3.0"
+  }
+}
