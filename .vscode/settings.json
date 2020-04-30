@@ -1,0 +1,26 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 60,
+            "database": "NEWACCOUNT",
+            "dialect": "OracleDB",
+            "name": "MyOracle",
+            "password": "oracle",
+            "port": 1521,
+            "server": "localhost",
+            "username": "BG"
+        },
+        {
+            "connectionTimeout": 60,
+            "database": "mychatapp",
+            "dialect": "MySQL",
+            "isActive": true,
+            "isConnected": true,
+            "name": "MySQL",
+            "password": "Balgopal@123",
+            "port": 3306,
+            "server": "localhost",
+            "username": "BG"
+        }
+    ]
+}

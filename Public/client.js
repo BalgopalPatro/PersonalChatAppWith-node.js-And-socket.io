@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.43.142:3000');
+var socket = io.connect('http://localhost:3000');
 // submit text message without reload/refresh the page
 $('form').submit(function(e){
     e.preventDefault(); // prevents page reloading
@@ -24,9 +24,32 @@ socket.on('is_online', function(username) {
     $('#messages').append($('<li>').html(username));
 });
 // ask username
-var username = prompt('Please tell me your name');
-socket.emit('username', username);
+// var username = prompt('Please tell me your name');
+// var pin = prompt('Please enter your pin');
+
+socket.emit('username', username,pin);  
 
 socket.on('private_message',(msg,from)=>{
     $('#messages').append($('<li>').html(from +"Private : "+ msg));
 })
+
+socket.on('auth_err',(msg)=>{
+    alert(msg);
+})
+
+document.getElementById('to').onkeyup = function(){
+    console.log("Typing..."+$('#to').val());
+    socket.emit('get_user',$('#to').val());
+}
+
+socket.on('suggested_user',(rst)=>{
+    console.log(rst.length);
+    var data = [];
+    $('#sug').empty();
+    rst.forEach((a)=>{
+        console.log(a.username);
+        $('#sug').append(($('<li>').html(a.username)));
+    })
+})
+
+
