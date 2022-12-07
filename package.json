@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/BalgopalPatro/PersonalChatAppWith-node.js-And-socket.io#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "consolidate": "^0.15.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "handlebars": "^4.7.6",
     "http": "0.0.1-security",
     "mongoose": "^5.9.10",
